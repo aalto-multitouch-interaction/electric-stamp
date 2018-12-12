@@ -2,7 +2,12 @@
 #include "particle.h"
 
 void Particle::update() {
+    if (!isAlive()) {
+        return;
+    }
+
     position += velocity;
+    life -= decay;
 
     if (position.x < -radius) {
         position.x = ofGetWidth() + radius;
@@ -17,5 +22,12 @@ void Particle::update() {
 }
 
 void Particle::render() {
-    ofDrawCircle(position, radius);
+    if (isAlive()) {
+        ofSetColor(255, (int)(life * 255));
+        ofDrawCircle(position, radius);
+    }
+}
+
+bool Particle::isAlive() {
+    return life > 0;
 }
