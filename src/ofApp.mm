@@ -8,14 +8,14 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
     for (int i = 0; i < particles.size(); i++) {
-        particles[i]->position += particles[i]->velocity;
+        particles[i]->update();
     }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     for (int i = 0; i < particles.size(); i++) {
-        ofDrawCircle(particles[i]->position, 50);
+        particles[i]->render();
     }
 }
 
@@ -26,7 +26,7 @@ void ofApp::exit(){
 
 //--------------------------------------------------------------
 void ofApp::touchDown(ofTouchEventArgs & touch){
-    particles.push_back(new Particle(touch.x, touch.y, ofRandomf(), ofRandomf()));
+    particles.push_back(new Particle(touch.x, touch.y, ofRandomf() * 2, ofRandomf() * 2, 50));
 }
 
 //--------------------------------------------------------------

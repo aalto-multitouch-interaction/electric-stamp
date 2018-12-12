@@ -1,3 +1,3 @@
 # Multitouch interaction
 
-A project for Aalto Multitouch Interaction course
+An [openFrameworks](https://openframeworks.cc/) project for Aalto Multitouch Interaction course
