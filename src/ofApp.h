@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ofxiOS.h"
-#include "particle.h"
+#include "emitter.h"
 
 class ofApp : public ofxiOSApp {
 	
@@ -22,5 +22,5 @@ class ofApp : public ofxiOSApp {
         void gotMemoryWarning();
         void deviceOrientationChanged(int newOrientation);
 
-    vector<Particle*> particles;
+    vector<Emitter*> emitters;
 };

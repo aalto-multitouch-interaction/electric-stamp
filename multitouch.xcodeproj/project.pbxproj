@@ -11,6 +11,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		508C324E21C111A3002CA462 /* particle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 508C324D21C111A3002CA462 /* particle.mm */; };
+		508C325121C12D70002CA462 /* emitter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 508C324F21C12D70002CA462 /* emitter.mm */; };
 		5326AEA810A23A0500278DE6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5326AEA710A23A0500278DE6 /* CoreLocation.framework */; };
 		53F323EB10A20EDB00E0DAE4 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F323EA10A20EDB00E0DAE4 /* OpenAL.framework */; };
 		67DFA53619F92A69003B3434 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67DFA53419F92A5E003B3434 /* Accelerate.framework */; };
@@ -55,6 +56,8 @@
 		32CA4F630368D1EE00C91783 /* ofxiOS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOS_Prefix.pch; sourceTree = "<group>"; };
 		5024F7C321C0FC3500972D48 /* particle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = particle.h; sourceTree = "<group>"; };
 		508C324D21C111A3002CA462 /* particle.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = particle.mm; sourceTree = "<group>"; };
+		508C324F21C12D70002CA462 /* emitter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = emitter.mm; sourceTree = "<group>"; };
+		508C325021C12D70002CA462 /* emitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = emitter.h; sourceTree = "<group>"; };
 		5326AEA710A23A0500278DE6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		53F323EA10A20EDB00E0DAE4 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		67DFA53419F92A5E003B3434 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -226,6 +229,8 @@
 				E4D8936C11527B74007E1F53 /* ofApp.h */,
 				5024F7C321C0FC3500972D48 /* particle.h */,
 				508C324D21C111A3002CA462 /* particle.mm */,
+				508C324F21C12D70002CA462 /* emitter.mm */,
+				508C325021C12D70002CA462 /* emitter.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -335,6 +340,7 @@
 			files = (
 				E4D8936E11527B74007E1F53 /* main.mm in Sources */,
 				E4D8936F11527B74007E1F53 /* ofApp.mm in Sources */,
+				508C325121C12D70002CA462 /* emitter.mm in Sources */,
 				508C324E21C111A3002CA462 /* particle.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

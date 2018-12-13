@@ -7,19 +7,15 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    for (int i = 0; i < particles.size(); i++) {
-        particles[i]->update();
-        if (!particles[i]->isAlive()) {
-            delete particles[i];
-            particles.erase(particles.begin() + i);
-        }
+    for (int i = 0; i < emitters.size(); i++) {
+        emitters[i]->update();
     }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    for (int i = 0; i < particles.size(); i++) {
-        particles[i]->render();
+    for (int i = 0; i < emitters.size(); i++) {
+        emitters[i]->render();
     }
 }
 
@@ -30,13 +26,7 @@ void ofApp::exit(){
 
 //--------------------------------------------------------------
 void ofApp::touchDown(ofTouchEventArgs & touch){
-    particles.push_back(new Particle(
-        touch.x,
-        touch.y,
-        ofRandomf() * 2,
-        ofRandomf() * 2,
-        ofMap(ofRandomf(), -1, 1, 0.001, 0.01),
-        50));
+    emitters.push_back(new Emitter(touch.x, touch.y, 1000));
 }
 
 //--------------------------------------------------------------

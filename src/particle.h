@@ -2,16 +2,16 @@
 #define PARTICLE_H
 
 class Particle {
-    const float radius, decay;
+public:
+    float radius, decay, life;
     ofVec2f position, velocity;
-    float life;
 
 public:
     Particle(float xPos, float yPos, float xVel, float yVel, float decay, float radius) :
         position(xPos, yPos),
         velocity(xVel, yVel),
         radius(radius),
-        life(1.0),
+        life(1),
         decay(decay) {}
 
     void update();
