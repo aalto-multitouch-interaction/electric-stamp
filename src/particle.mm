@@ -1,13 +1,12 @@
 #include "ofxiOS.h"
 #include "particle.h"
 
+#include "emitter.h"
+
 void Particle::update() {
     if (!isAlive()) {
         return;
     }
-
-    position += velocity;
-    life -= decay;
 
     if (position.x < -radius) {
         position.x = ofGetWidth() + radius;
@@ -19,11 +18,14 @@ void Particle::update() {
     } else if (position.y > ofGetHeight() + radius) {
         position.y = -radius;
     }
+
+    position += velocity;
+    life -= decay;
 }
 
 void Particle::render() {
     if (isAlive()) {
-        ofSetColor(255, (int)(life * 255));
+        ofSetColor(emitter->color.r, emitter->color.g, emitter->color.b, (int)(life * emitter->life * 255));
         ofDrawCircle(position, radius);
     }
 }

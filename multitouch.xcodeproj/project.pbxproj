@@ -54,6 +54,7 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* ofxiOS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOS_Prefix.pch; sourceTree = "<group>"; };
+		500D8B0321C3A75C00714807 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		5024F7C321C0FC3500972D48 /* particle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = particle.h; sourceTree = "<group>"; };
 		508C324D21C111A3002CA462 /* particle.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = particle.mm; sourceTree = "<group>"; };
 		508C324F21C12D70002CA462 /* emitter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = emitter.mm; sourceTree = "<group>"; };
@@ -231,6 +232,7 @@
 				508C324D21C111A3002CA462 /* particle.mm */,
 				508C324F21C12D70002CA462 /* emitter.mm */,
 				508C325021C12D70002CA462 /* emitter.h */,
+				500D8B0321C3A75C00714807 /* config.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
